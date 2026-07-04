@@ -1,0 +1,29 @@
+<svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <!-- window -->
+  <rect x="0" y="0" width="800" height="260" rx="8" fill="#2b0f1f"/>
+
+  <!-- title bar -->
+  <rect x="0" y="0" width="800" height="30" rx="8" fill="#3a2130"/>
+  <rect x="0" y="16" width="800" height="14" fill="#3a2130"/>
+  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="15" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="15" r="6" fill="#27c93f"/>
+  <text x="400" y="20" fill="#c9a8bb" font-size="13" text-anchor="middle">purofuro@about</text>
+
+  <!-- body text -->
+  <g font-size="15">
+    <text x="20" y="60" fill="#7ee787">purofuro@metrics<tspan fill="#ffffff">:~$ whoami</tspan></text>
+    <text x="20" y="84" fill="#ffffff" font-weight="bold">Fico "PuroFuro" Simhanandi</text>
+
+    <text x="20" y="118" fill="#7ee787">purofuro@metrics<tspan fill="#ffffff">:~$ cat interests.txt</tspan></text>
+    <text x="20" y="142" fill="#e6e6e6">Interested in both UI/UX and Data Analysis, always trying to</text>
+    <text x="20" y="164" fill="#e6e6e6">improve my skills in both creative and technical aspects.</text>
+    <text x="20" y="186" fill="#e6e6e6">I like trying new things — they're a great way to gain</text>
+    <text x="20" y="208" fill="#e6e6e6">experience while having fun.</text>
+
+    <text x="20" y="240" fill="#7ee787">purofuro@metrics<tspan fill="#ffffff">:~$</tspan><tspan fill="#ffffff">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+      █
+    </tspan></text>
+  </g>
+</svg>
