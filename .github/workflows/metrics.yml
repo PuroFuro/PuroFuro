@@ -3,9 +3,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"   # daily
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # required — default token is read-only, this step pushes metrics.svg back to the repo
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -13,10 +16,10 @@ jobs:
           template: terminal
           filename: metrics.svg
 
-          # Only include this block once you've actually starred enough repos
-          # plugin_topics: yes
-          # plugin_topics_mode: starred
-
           plugin_languages: yes
           plugin_lines: yes
-          plugin_habits: yes
+          # plugin_habits: yes   # left disabled — uncertain whether default token scope + your activity volume gives this enough data to render meaningfully; test the two above first, add this back and check output before trusting it
+
+          # plugin_topics: yes
+          # plugin_topics_mode: starred
+          # ^ still disabled — you have 1 starred repo, this will render empty
